@@ -27,7 +27,7 @@ type Ctx = {
   addToCart: (id: string, qty?: number) => void; setQty: (id: string, qty: number) => void; removeFromCart: (id: string) => void;
   toggleWish: (id: string) => void;
   cartOpen: boolean; setCartOpen: (b: boolean) => void;
-  totals: ReturnType<typeof computeTotals> & { count: number; coupon?: Coupon };
+  totals: ReturnType<typeof computeTotals> & { count: number; coupon?: Coupon | undefined };
 };
 
 const StoreCtx = createContext<Ctx | null>(null);

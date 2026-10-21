@@ -99,11 +99,11 @@ const O = (id: string, c: Customer, date: string, items: [string, string, number
 };
 
 export const defaultOrders: Order[] = [
-  O("UFF-10241", defaultCustomers[0], "2026-10-18", [["p1", "Green Garden Peas", 2, 199], ["p6", "Punjabi Samosa", 1, 179]], "Delivered", "UPI (demo)"),
-  O("UFF-10242", defaultCustomers[1], "2026-10-19", [["p19", "Family Freezer Combo", 1, 999]], "Shipped", "Card (demo)"),
-  O("UFF-10243", defaultCustomers[2], "2026-10-20", [["p11", "Chicken Seekh Kebab", 1, 399], ["p9", "Laccha Paratha", 2, 119]], "Processing", "Cash on Delivery"),
-  O("UFF-10244", defaultCustomers[3], "2026-10-20", [["p4", "Berry Medley", 2, 349]], "Pending", "UPI (demo)"),
-  O("UFF-10245", defaultCustomers[0], "2026-10-21", [["p13", "Tiger Prawns (Cleaned)", 1, 549], ["p15", "Vanilla Bean Ice Cream", 1, 249]], "Confirmed", "Card (demo)"),
+  O("UFF-10241", defaultCustomers[0]!, "2026-10-18", [["p1", "Green Garden Peas", 2, 199], ["p6", "Punjabi Samosa", 1, 179]], "Delivered", "UPI (demo)"),
+  O("UFF-10242", defaultCustomers[1]!, "2026-10-19", [["p19", "Family Freezer Combo", 1, 999]], "Shipped", "Card (demo)"),
+  O("UFF-10243", defaultCustomers[2]!, "2026-10-20", [["p11", "Chicken Seekh Kebab", 1, 399], ["p9", "Laccha Paratha", 2, 119]], "Processing", "Cash on Delivery"),
+  O("UFF-10244", defaultCustomers[3]!, "2026-10-20", [["p4", "Berry Medley", 2, 349]], "Pending", "UPI (demo)"),
+  O("UFF-10245", defaultCustomers[0]!, "2026-10-21", [["p13", "Tiger Prawns (Cleaned)", 1, 549], ["p15", "Vanilla Bean Ice Cream", 1, 249]], "Confirmed", "Card (demo)"),
 ];
 
 export const defaultCoupons: Coupon[] = [
